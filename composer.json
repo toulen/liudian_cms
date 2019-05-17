@@ -1,0 +1,33 @@
+{
+  "name":"toulen/liudian_cms",
+  "description": "Liudian Cms",
+  "keywords": ["framework", "laravel", "cms"],
+  "license": "MIT",
+  "require": {
+    "php": "^7.1.3",
+    "laravel/framework": "5.8.*",
+    "laravel/tinker": "^1.0",
+    "toulen/admin": "^2.0.4"
+  },
+  "autoload": {
+    "classmap": [
+      "database/seeds"
+    ],
+    "psr-4": {
+      "Liudian\\Cms\\": "src/",
+      "Ext\\Liudian\\Cms\\": "../../../liudian/cms"
+    },
+    "files": [
+    ]
+  },
+  "extra": {
+    "laravel" : {
+      "providers" : [
+        "Liudian\\Cms\\Providers\\LiudianCmsServiceProvider",
+        "Liudian\\Cms\\Providers\\RouteServiceProvider",
+      ],
+      "aliases":{
+      }
+    }
+  }
+}
