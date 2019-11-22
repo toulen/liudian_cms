@@ -24,7 +24,7 @@
     "laravel" : {
       "providers" : [
         "Liudian\\Cms\\Providers\\LiudianCmsServiceProvider",
-        "Liudian\\Cms\\Providers\\RouteServiceProvider",
+        "Liudian\\Cms\\Providers\\RouteServiceProvider"
       ],
       "aliases":{
       }
