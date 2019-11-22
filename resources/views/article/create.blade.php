@@ -120,8 +120,12 @@
 
         $('.uploadBtn').h5upload({
             fileTypeExts: 'jpg,png,gif,jpeg',
+<<<<<<< HEAD
 {{--            url: "{!! URL::route('admin_public_ajax_upload') !!}",--}}
             url: "{{route('upload_ajax')}}",
+=======
+            url: "{!! URL::route('admin_public_ajax_upload') !!}",
+>>>>>>> 3a95e97666dda52516011a3a81776e3be8bfbc75
             fileObjName: 'upload',
             fileSizeLimit: 10 * 1024 * 1024,
             formData: {'_token': '{{ csrf_token() }}', 'type': 'image'},
